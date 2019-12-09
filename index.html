@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+   </head>
+   <style>
+      .buttons {
+         position: absolute;
+         top: 0;
+         left: 0;
+         background: #fff;
+         height: 130px;
+         border: 3px solid #000;
+         display: flex;
+         flex-wrap: wrap;
+      }
+      .total {
+         width: 100%;
+         position: absolute;
+         top: 134px;
+         background: #ebf0da;
+         padding: 20px 0px;
+         text-align: center;
+         border: 1.5px solid #000;
+      }
+
+      #start {
+         background-color: #009688;
+         padding: 20px 60px;
+         color: #fff;
+         border-bottom: unset;
+         border-radius: 5px 5px 0 0;
+      }
+      #stop {
+         background-color: #96291e;
+         padding: 20px 60px;
+         color: #fff;
+         border-bottom: unset;
+         border-radius: 5px 5px 0 0;
+      }
+   </style>
+   <body>
+      <div class="buttons">
+         <button id="start"> START </button>
+         <button id="stop"> STOP </button>
+         <div class="total"></div>
+      </div>
+      <canvas id="canvas"></canvas>
+      <script src="script.js"></script>
+   </body>
+</html>
